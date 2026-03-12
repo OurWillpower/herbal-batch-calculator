@@ -47,6 +47,7 @@ def load_ingredients_from_csv():
     conn = sqlite3.connect("ingredients.db")
     cursor = conn.cursor()
 
+    # check if ingredients already exist
     cursor.execute("SELECT COUNT(*) FROM ingredients")
     count = cursor.fetchone()[0]
 
@@ -56,6 +57,7 @@ def load_ingredients_from_csv():
             reader = csv.DictReader(csvfile)
 
             for row in reader:
+
                 cursor.execute("""
                     INSERT INTO ingredients
                     (sanskrit_name, botanical_name, common_name, plant_part, form, category, price_per_kg)
@@ -67,7 +69,7 @@ def load_ingredients_from_csv():
                     row["plant_part"],
                     row["form"],
                     row["category"],
-                    row["price_per_kg"]
+                    float(row["price_per_kg"])
                 ))
 
         conn.commit()
