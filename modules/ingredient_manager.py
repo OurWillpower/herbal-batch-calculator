@@ -51,3 +51,17 @@ def search_ingredients(keyword):
     conn.close()
 
     return rows
+    def get_ingredient_names():
+
+    conn = sqlite3.connect("ingredients.db")
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT sanskrit_name || ' - ' || botanical_name FROM ingredients
+    """)
+
+    rows = cursor.fetchall()
+
+    conn.close()
+
+    return [row[0] for row in rows]
