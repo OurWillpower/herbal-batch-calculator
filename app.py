@@ -1,12 +1,16 @@
 import streamlit as st
 import pandas as pd
 
-from modules.database import create_ingredient_table
+from modules.database import create_ingredient_table, load_ingredients_from_csv
 from modules.ingredient_manager import add_ingredient, get_all_ingredients, search_ingredients
 
 st.title("Herbal Formulation System")
 
+# Create database table
 create_ingredient_table()
+
+# Load ingredients from CSV
+load_ingredients_from_csv()
 
 st.header("Add New Ingredient")
 
