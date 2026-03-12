@@ -27,21 +27,28 @@ def load_ingredients_from_csv():
     conn = sqlite3.connect("ingredients.db")
     cursor = conn.cursor()
 
-    with open("ingredients_master.csv", newline='', encoding='utf-8') as csvfile:
-        reader = csv.DictReader(csvfile)
+    # check if database already has data
+    cursor.execute("SELECT COUNT(*) FROM ingredients")
+    count = cursor.fetchone()[0]
 
-        for row in reader:
-            cursor.execute("""
-                INSERT INTO ingredients
-                (sanskrit_name, botanical_name, plant_part, form, price_per_kg)
-                VALUES (?, ?, ?, ?, ?)
-            """, (
-                row["sanskrit_name"],
-                row["botanical_name"],
-                row["plant_part"],
-                row["form"],
-                row["price_per_kg"]
-            ))
+    if count == 0:
 
-    conn.commit()
+        with open("ingredients_master.csv", newline='', encoding='utf-8') as csvfile:
+            reader = csv.DictReader(csvfile)
+
+            for row in reader:
+                cursor.execute("""
+                    INSERT INTO ingredients
+                    (sanskrit_name, botanical_name, plant_part, form, price_per_kg)
+                    VALUES (?, ?, ?, ?, ?)
+                """, (
+                    row["sanskrit_name"],
+                    row["botanical_name"],
+                    row["plant_part"],
+                    row["form"],
+                    row["price_per_kg"]
+                ))
+
+        conn.commit()
+
     conn.close()
