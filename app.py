@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
+
 from modules.database import create_ingredient_table
-from modules.ingredient_manager import add_ingredient, get_all_ingredients
+from modules.ingredient_manager import add_ingredient, get_all_ingredients, search_ingredients
 
 st.title("Herbal Formulation System")
 
@@ -20,13 +21,18 @@ if st.button("Add Ingredient"):
     st.success("Ingredient added successfully")
 
 
-st.header("Ingredient Database")
+st.header("Search Ingredients")
 
-data = get_all_ingredients()
+keyword = st.text_input("Type Sanskrit or Botanical name")
+
+if keyword:
+    data = search_ingredients(keyword)
+else:
+    data = get_all_ingredients()
 
 df = pd.DataFrame(
     data,
-    columns=["ID", "Sanskrit Name", "Botanical Name", "Plant Part", "Form", "Price/kg"]
+    columns=["ID","Sanskrit Name","Botanical Name","Plant Part","Form","Price/kg"]
 )
 
 st.dataframe(df)
