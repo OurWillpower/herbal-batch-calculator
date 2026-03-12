@@ -1,84 +1,28 @@
-sanskrit_name,botanical_name,plant_part,form,price_per_kg
-Haridra,Curcuma longa,Rhizome,Powder,0
-Shunthi,Zingiber officinale,Rhizome,Powder,0
-Tulasi,Ocimum sanctum,Leaf,Powder,0
-Guduchi,Tinospora cordifolia,Stem,Powder,0
-Ashwagandha,Withania somnifera,Root,Powder,0
-Amalaki,Phyllanthus emblica,Fruit,Powder,0
-Bibhitaki,Terminalia bellirica,Fruit,Powder,0
-Haritaki,Terminalia chebula,Fruit,Powder,0
-Brahmi,Bacopa monnieri,Whole plant,Powder,0
-Mandukaparni,Centella asiatica,Whole plant,Powder,0
-Shatavari,Asparagus racemosus,Root,Powder,0
-Vidanga,Embelia ribes,Fruit,Powder,0
-Gokshura,Tribulus terrestris,Fruit,Powder,0
-Pippali,Piper longum,Fruit,Powder,0
-Maricha,Piper nigrum,Fruit,Powder,0
-Ela,Elettaria cardamomum,Seed,Powder,0
-Tvak,Cinnamomum verum,Bark,Powder,0
-Lavanga,Syzygium aromaticum,Bud,Powder,0
-Neem,Azadirachta indica,Leaf,Powder,0
-Arjuna,Terminalia arjuna,Bark,Powder,0
-Bala,Sida cordifolia,Root,Powder,0
-Atibala,Abutilon indicum,Root,Powder,0
-Kutaja,Holarrhena antidysenterica,Bark,Powder,0
-Mustaka,Cyperus rotundus,Rhizome,Powder,0
-Punarnava,Boerhavia diffusa,Root,Powder,0
-Chitraka,Plumbago zeylanica,Root,Powder,0
-Kumari,Aloe vera,Leaf,Powder,0
-Kalmegha,Andrographis paniculata,Whole plant,Powder,0
-Bhringaraja,Eclipta alba,Whole plant,Powder,0
-Jatamansi,Nardostachys jatamansi,Root,Powder,0
-Tagara,Valeriana wallichii,Root,Powder,0
-Devadaru,Cedrus deodara,Heartwood,Powder,0
-Shigru,Moringa oleifera,Leaf,Powder,0
-Varuna,Crataeva nurvala,Bark,Powder,0
-Kantakari,Solanum xanthocarpum,Whole plant,Powder,0
-Brihati,Solanum indicum,Whole plant,Powder,0
-Eranda,Ricinus communis,Seed,Powder,0
-Bilva,Aegle marmelos,Fruit,Powder,0
-Agnimantha,Premna integrifolia,Root,Powder,0
-Patala,Stereospermum suaveolens,Root,Powder,0
-Gambhari,Gmelina arborea,Root,Powder,0
-Shyonaka,Oroxylum indicum,Root,Powder,0
-Aparajita,Clitoria ternatea,Root,Powder,0
-Daruharidra,Berberis aristata,Stem,Powder,0
-Yashtimadhu,Glycyrrhiza glabra,Root,Powder,0
-Karanja,Pongamia pinnata,Seed,Powder,0
-Bakuchi,Psoralea corylifolia,Seed,Powder,0
-Rasona,Allium sativum,Bulb,Powder,0
-Palasha,Butea monosperma,Flower,Powder,0
-Padmaka,Prunus cerasoides,Bark,Powder,0
-Shankhapushpi,Convolvulus pluricaulis,Whole plant,Powder,0
-Kapikacchu,Mucuna pruriens,Seed,Powder,0
-Safed Musli,Chlorophytum borivilianum,Root,Powder,0
-Guggulu,Commiphora mukul,Resin,Powder,0
-Salai,Boswellia serrata,Resin,Powder,0
-Lodhra,Symplocos racemosa,Bark,Powder,0
-Khadira,Acacia catechu,Bark,Powder,0
-Anantamul,Hemidesmus indicus,Root,Powder,0
-Vacha,Acorus calamus,Rhizome,Powder,0
-Kushta,Saussurea costus,Root,Powder,0
-Pushkarmool,Inula racemosa,Root,Powder,0
-Nagarmotha,Cyperus rotundus,Rhizome,Powder,0
-Rasna,Pluchea lanceolata,Root,Powder,0
-Patha,Cissampelos pareira,Root,Powder,0
-Katuki,Picrorhiza kurroa,Root,Powder,0
-Jyotishmati,Celastrus paniculatus,Seed,Powder,0
-Indrayava,Holarrhena antidysenterica,Seed,Powder,0
-Bhunimba,Andrographis paniculata,Whole plant,Powder,0
-Sariva,Hemidesmus indicus,Root,Powder,0
-Manjistha,Rubia cordifolia,Root,Powder,0
-Darba,Desmostachya bipinnata,Grass,Powder,0
-Ikshu,Saccharum officinarum,Stem,Powder,0
-Draksha,Vitis vinifera,Fruit,Powder,0
-Dadima,Punica granatum,Fruit,Powder,0
-Badara,Ziziphus mauritiana,Fruit,Powder,0
-Tila,Sesamum indicum,Seed,Powder,0
-Yava,Hordeum vulgare,Seed,Powder,0
-Godhuma,Triticum aestivum,Seed,Powder,0
-Chanaka,Cicer arietinum,Seed,Powder,0
-Mudga,Vigna radiata,Seed,Powder,0
-Masura,Lens culinaris,Seed,Powder,0
-Masha,Vigna mungo,Seed,Powder,0
-Kulatha,Macrotyloma uniflorum,Seed,Powder,0
+sanskrit_name,botanical_name,common_name,plant_part,form,category,price_per_kg
+Haridra,Curcuma longa,Turmeric,Rhizome,Powder,Herb,0
+Shunthi,Zingiber officinale,Dry Ginger,Rhizome,Powder,Herb,0
+Tulasi,Ocimum sanctum,Holy Basil,Leaf,Powder,Herb,0
+Guduchi,Tinospora cordifolia,Giloy,Stem,Powder,Herb,0
+Ashwagandha,Withania somnifera,Indian Ginseng,Root,Powder,Herb,0
+Amalaki,Phyllanthus emblica,Amla,Fruit,Powder,Herb,0
+Bibhitaki,Terminalia bellirica,Baheda,Fruit,Powder,Herb,0
+Haritaki,Terminalia chebula,Harad,Fruit,Powder,Herb,0
+Brahmi,Bacopa monnieri,Brahmi,Whole plant,Powder,Herb,0
+Mandukaparni,Centella asiatica,Gotu Kola,Whole plant,Powder,Herb,0
+Shatavari,Asparagus racemosus,Wild Asparagus,Root,Powder,Herb,0
+Vidanga,Embelia ribes,False Black Pepper,Fruit,Powder,Herb,0
+Gokshura,Tribulus terrestris,Puncture Vine,Fruit,Powder,Herb,0
+Pippali,Piper longum,Long Pepper,Fruit,Powder,Herb,0
+Maricha,Piper nigrum,Black Pepper,Fruit,Powder,Herb,0
+Ela,Elettaria cardamomum,Cardamom,Seed,Powder,Herb,0
+Tvak,Cinnamomum verum,Cinnamon Bark,Bark,Powder,Herb,0
+Lavanga,Syzygium aromaticum,Clove,Bud,Powder,Herb,0
+Neem,Azadirachta indica,Neem Leaf,Leaf,Powder,Herb,0
+Arjuna,Terminalia arjuna,Arjuna Bark,Bark,Powder,Herb,0
+Guggulu,Commiphora mukul,Guggul Resin,Resin,Extract,Resin,0
+Salai,Boswellia serrata,Indian Frankincense,Resin,Extract,Resin,0
+Shilajit,Asphaltum punjabinum,Shilajit Resin,Resin,Extract,Mineral,0
+Triphala Mix,Compound,Triphala,Fruit Mix,Powder,Compound,0
+Trikatu Mix,Compound,Trikatu,Fruit Mix,Powder,Compound,0
+Dashamoola Mix,Compound,Dashamoola,Root Mix,Powder,Compound,0
+Panchakola Mix,Compound,Panchakola,Root Mix,Powder,Compound,0
