@@ -23,3 +23,7 @@ df = pd.DataFrame(data)
 df["Required Kg"] = batch_size * df["Percentage"] / 100
 
 st.write(df)
+from modules.database import *
+from modules.ingredient_manager import *
+from modules.formulation_builder import *
+from modules.batch_calculator import *
