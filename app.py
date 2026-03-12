@@ -8,7 +8,6 @@ from modules.ingredient_manager import (
     search_ingredients,
     get_ingredient_names
 )
-
 st.title("Herbal Formulation System")
 
 create_ingredient_table()
