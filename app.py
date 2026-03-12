@@ -17,11 +17,9 @@ from modules.ingredient_manager import (
 
 st.title("Herbal Formulation System")
 
-# Initialize database tables
 create_ingredient_table()
 create_formulation_table()
 load_ingredients_from_csv()
-
 
 # -------------------------------------------------
 # ADD NEW INGREDIENT
@@ -38,7 +36,6 @@ price = st.number_input("Price per kg")
 if st.button("Add Ingredient"):
     add_ingredient(sanskrit_name, botanical_name, plant_part, form, price)
     st.success("Ingredient added successfully")
-
 
 # -------------------------------------------------
 # SEARCH INGREDIENT DATABASE
@@ -59,7 +56,6 @@ df = pd.DataFrame(
 )
 
 st.dataframe(df)
-
 
 # -------------------------------------------------
 # FORMULATION BUILDER
@@ -93,10 +89,11 @@ if st.button("Add Ingredient to Formula"):
 
     st.success("Ingredient added to formulation")
 
-
 # -------------------------------------------------
 # VIEW FORMULATION
 # -------------------------------------------------
+
+formula_rows = []
 
 if product_name:
 
@@ -109,16 +106,41 @@ if product_name:
         WHERE product_name = ?
     """, (product_name,))
 
-    rows = cursor.fetchall()
+    formula_rows = cursor.fetchall()
 
     conn.close()
 
-    if rows:
+    if formula_rows:
         st.subheader("Current Formulation")
 
         formula_df = pd.DataFrame(
-            rows,
+            formula_rows,
             columns=["Ingredient", "Percentage"]
         )
 
         st.dataframe(formula_df)
+
+# -------------------------------------------------
+# BATCH CALCULATOR
+# -------------------------------------------------
+
+if formula_rows:
+
+    st.header("Batch Quantity Calculator")
+
+    batch_size = st.number_input("Enter Batch Size (kg or liters)", value=100.0)
+
+    results = []
+
+    for ingredient, percent in formula_rows:
+
+        qty = batch_size * percent / 100
+
+        results.append([ingredient, percent, qty])
+
+    result_df = pd.DataFrame(
+        results,
+        columns=["Ingredient", "% in Formula", "Required Quantity"]
+    )
+
+    st.dataframe(result_df)
