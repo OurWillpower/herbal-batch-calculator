@@ -1,6 +1,7 @@
 import streamlit as st
+import pandas as pd
 from modules.database import create_ingredient_table
-from modules.ingredient_manager import add_ingredient
+from modules.ingredient_manager import add_ingredient, get_all_ingredients
 
 st.title("Herbal Formulation System")
 
@@ -17,3 +18,15 @@ price = st.number_input("Price per kg")
 if st.button("Add Ingredient"):
     add_ingredient(sanskrit_name, botanical_name, plant_part, form, price)
     st.success("Ingredient added successfully")
+
+
+st.header("Ingredient Database")
+
+data = get_all_ingredients()
+
+df = pd.DataFrame(
+    data,
+    columns=["ID", "Sanskrit Name", "Botanical Name", "Plant Part", "Form", "Price/kg"]
+)
+
+st.dataframe(df)
