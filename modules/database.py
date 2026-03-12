@@ -12,8 +12,10 @@ def create_ingredient_table():
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             sanskrit_name TEXT,
             botanical_name TEXT,
+            common_name TEXT,
             plant_part TEXT,
             form TEXT,
+            category TEXT,
             price_per_kg REAL
         )
     """)
@@ -56,13 +58,15 @@ def load_ingredients_from_csv():
             for row in reader:
                 cursor.execute("""
                     INSERT INTO ingredients
-                    (sanskrit_name, botanical_name, plant_part, form, price_per_kg)
-                    VALUES (?, ?, ?, ?, ?)
+                    (sanskrit_name, botanical_name, common_name, plant_part, form, category, price_per_kg)
+                    VALUES (?, ?, ?, ?, ?, ?, ?)
                 """, (
                     row["sanskrit_name"],
                     row["botanical_name"],
+                    row["common_name"],
                     row["plant_part"],
                     row["form"],
+                    row["category"],
                     row["price_per_kg"]
                 ))
 
