@@ -22,12 +22,29 @@ def create_ingredient_table():
     conn.close()
 
 
+def create_formulation_table():
+
+    conn = sqlite3.connect("ingredients.db")
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS formulations (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            product_name TEXT,
+            ingredient_name TEXT,
+            percentage REAL
+        )
+    """)
+
+    conn.commit()
+    conn.close()
+
+
 def load_ingredients_from_csv():
 
     conn = sqlite3.connect("ingredients.db")
     cursor = conn.cursor()
 
-    # check if database already has data
     cursor.execute("SELECT COUNT(*) FROM ingredients")
     count = cursor.fetchone()[0]
 
