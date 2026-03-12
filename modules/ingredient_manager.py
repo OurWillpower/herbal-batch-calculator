@@ -51,7 +51,9 @@ def search_ingredients(keyword):
     conn.close()
 
     return rows
-    def get_ingredient_names():
+
+
+def get_ingredient_names():
 
     conn = sqlite3.connect("ingredients.db")
     cursor = conn.cursor()
