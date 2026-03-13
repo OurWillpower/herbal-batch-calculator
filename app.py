@@ -2,20 +2,14 @@ import streamlit as st
 import pandas as pd
 import sqlite3
 import csv
-import os
 
 st.title("Herbal Formulation System")
 
-# database file
-DB_PATH = os.path.join(os.getcwd(), "ingredients.db")
-
-def get_connection():
-    return sqlite3.connect(DB_PATH)
+DB_FILE = "ingredients.db"
 
 
 def create_tables():
-
-    conn = get_connection()
+    conn = sqlite3.connect(DB_FILE)
     cursor = conn.cursor()
 
     cursor.execute("""
@@ -45,25 +39,17 @@ st.header("Load Ingredient Master Database")
 
 if st.button("Load Ingredients from CSV"):
 
-    conn = get_connection()
+    conn = sqlite3.connect(DB_FILE)
     cursor = conn.cursor()
 
-   file_path = "ingredients_master.csv"
-
-    if not os.path.exists(file_path):
-
-        st.error("ingredients_master.csv file not found in project folder")
-
-    else:
-
-        with open(file_path, newline='', encoding='utf-8') as csvfile:
+    try:
+        with open("ingredients_master.csv", newline="", encoding="utf-8") as csvfile:
 
             reader = csv.DictReader(csvfile)
 
             for row in reader:
 
                 try:
-
                     cursor.execute("""
                         INSERT INTO ingredients
                         (sanskrit_name, botanical_name, common_name, plant_part, form, category, price_per_kg)
@@ -77,15 +63,16 @@ if st.button("Load Ingredients from CSV"):
                         row["category"],
                         float(row["price_per_kg"])
                     ))
-
                 except:
                     pass
 
         conn.commit()
-        conn.close()
+        st.success("Ingredient database imported")
 
-        st.success("Ingredient database imported successfully")
+    except:
+        st.error("ingredients_master.csv not found in project folder")
 
+    conn.close()
 
 # -----------------------------
 # SEARCH INGREDIENTS
@@ -95,7 +82,7 @@ st.header("Search Ingredients")
 
 keyword = st.text_input("Type Sanskrit or Botanical name")
 
-conn = get_connection()
+conn = sqlite3.connect(DB_FILE)
 
 if keyword:
 
