@@ -2,10 +2,17 @@ import sqlite3
 import csv
 import os
 
+# database file will be stored in project root
+DB_PATH = os.path.join(os.getcwd(), "ingredients.db")
+
+
+def get_connection():
+    return sqlite3.connect(DB_PATH)
+
 
 def create_ingredient_table():
 
-    conn = sqlite3.connect("ingredients.db")
+    conn = get_connection()
     cursor = conn.cursor()
 
     cursor.execute("""
@@ -27,7 +34,7 @@ def create_ingredient_table():
 
 def create_formulation_table():
 
-    conn = sqlite3.connect("ingredients.db")
+    conn = get_connection()
     cursor = conn.cursor()
 
     cursor.execute("""
@@ -45,7 +52,7 @@ def create_formulation_table():
 
 def load_ingredients_from_csv():
 
-    conn = sqlite3.connect("ingredients.db")
+    conn = get_connection()
     cursor = conn.cursor()
 
     cursor.execute("SELECT COUNT(*) FROM ingredients")
@@ -78,7 +85,7 @@ def load_ingredients_from_csv():
                         float(row["price_per_kg"])
                     ))
                 except sqlite3.IntegrityError:
-                    # Skip duplicates
+                    # skip duplicates
                     pass
 
         conn.commit()
