@@ -2,7 +2,6 @@ import sqlite3
 import csv
 import os
 
-# database file will be stored in project root
 DB_PATH = os.path.join(os.getcwd(), "ingredients.db")
 
 
@@ -55,39 +54,36 @@ def load_ingredients_from_csv():
     conn = get_connection()
     cursor = conn.cursor()
 
-    cursor.execute("SELECT COUNT(*) FROM ingredients")
-    count = cursor.fetchone()[0]
+    file_path = os.path.join(os.getcwd(), "ingredients_master.csv")
 
-    if count == 0:
+    if not os.path.exists(file_path):
+        print("CSV file not found")
+        return
 
-        file_path = os.path.join(os.getcwd(), "ingredients_master.csv")
+    with open(file_path, newline='', encoding='utf-8') as csvfile:
 
-        if not os.path.exists(file_path):
-            print("CSV file not found:", file_path)
-            return
+        reader = csv.DictReader(csvfile)
 
-        with open(file_path, newline='', encoding='utf-8') as csvfile:
-            reader = csv.DictReader(csvfile)
+        for row in reader:
 
-            for row in reader:
-                try:
-                    cursor.execute("""
-                        INSERT INTO ingredients
-                        (sanskrit_name, botanical_name, common_name, plant_part, form, category, price_per_kg)
-                        VALUES (?, ?, ?, ?, ?, ?, ?)
-                    """, (
-                        row["sanskrit_name"],
-                        row["botanical_name"],
-                        row["common_name"],
-                        row["plant_part"],
-                        row["form"],
-                        row["category"],
-                        float(row["price_per_kg"])
-                    ))
-                except sqlite3.IntegrityError:
-                    # skip duplicates
-                    pass
+            try:
 
-        conn.commit()
+                cursor.execute("""
+                    INSERT INTO ingredients
+                    (sanskrit_name, botanical_name, common_name, plant_part, form, category, price_per_kg)
+                    VALUES (?, ?, ?, ?, ?, ?, ?)
+                """, (
+                    row["sanskrit_name"],
+                    row["botanical_name"],
+                    row["common_name"],
+                    row["plant_part"],
+                    row["form"],
+                    row["category"],
+                    float(row["price_per_kg"])
+                ))
 
+            except sqlite3.IntegrityError:
+                pass
+
+    conn.commit()
     conn.close()
