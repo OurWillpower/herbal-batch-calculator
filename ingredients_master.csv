@@ -1,0 +1,301 @@
+sanskrit_name,botanical_name,common_name,plant_part,form,category,price_per_kg
+Ashwagandha,Withania somnifera,Indian Ginseng,Root,Powder,Herb,0
+Guduchi,Tinospora cordifolia,Giloy,Stem,Powder,Herb,0
+Haridra,Curcuma longa,Turmeric,Rhizome,Powder,Herb,0
+Shunthi,Zingiber officinale,Dry Ginger,Rhizome,Powder,Herb,0
+Tulasi,Ocimum sanctum,Holy Basil,Leaf,Powder,Herb,0
+Brahmi,Bacopa monnieri,Brahmi,Whole Plant,Powder,Herb,0
+Mandukaparni,Centella asiatica,Gotu Kola,Whole Plant,Powder,Herb,0
+Shatavari,Asparagus racemosus,Wild Asparagus,Root,Powder,Herb,0
+Nirgundi,Vitex negundo,Five Leaved Chaste Tree,Leaf,Powder,Herb,0
+Punarnava,Boerhavia diffusa,Spreading Hogweed,Root,Powder,Herb,0
+Kalmegh,Andrographis paniculata,King of Bitters,Leaf,Powder,Herb,0
+Kutki,Picrorhiza kurroa,Kutki,Root,Powder,Herb,0
+Arjuna,Terminalia arjuna,Arjuna Bark,Bark,Powder,Tree,0
+Neem,Azadirachta indica,Neem,Leaf,Powder,Tree,0
+Ashoka,Saraca asoca,Ashoka,Bark,Powder,Tree,0
+Bilva,Aegle marmelos,Bael,Fruit,Powder,Tree,0
+Pippali,Piper longum,Long Pepper,Fruit,Powder,Herb,0
+Maricha,Piper nigrum,Black Pepper,Fruit,Powder,Herb,0
+Ela,Elettaria cardamomum,Cardamom,Seed,Powder,Herb,0
+Lavanga,Syzygium aromaticum,Clove,Flower Bud,Powder,Herb,0
+Guggulu,Commiphora mukul,Guggul Resin,Resin,Extract,Resin,0
+Shallaki,Boswellia serrata,Indian Frankincense,Resin,Extract,Resin,0
+Shilajit,Asphaltum punjabinum,Mineral Pitch,Resin,Extract,Mineral,0
+Sesame Oil,Sesamum indicum,Til Oil,Seed,Oil,Base Oil,0
+Coconut Oil,Cocos nucifera,Coconut Oil,Kernel,Oil,Base Oil,0
+Castor Oil,Ricinus communis,Castor Oil,Seed,Oil,Base Oil,0
+Eucalyptus Oil,Eucalyptus globulus,Eucalyptus Oil,Leaf,Oil,Essential Oil,0
+Peppermint Oil,Mentha piperita,Peppermint Oil,Leaf,Oil,Essential Oil,0
+Clove Oil,Syzygium aromaticum,Clove Oil,Bud,Oil,Essential Oil,0
+Lemongrass Oil,Cymbopogon citratus,Lemongrass Oil,Leaf,Oil,Essential Oil,0
+Triphala,Compound,Triphala Mix,Fruit Mix,Powder,Compound,0
+Trikatu,Compound,Trikatu Mix,Fruit Mix,Powder,Compound,0
+Dashamoola,Compound,Dashamoola Mix,Root Mix,Powder,Compound,0
+Herb_34,Botanical_34,Common_34,Part,Powder,Herb,0
+Herb_35,Botanical_35,Common_35,Part,Powder,Herb,0
+Herb_36,Botanical_36,Common_36,Part,Powder,Herb,0
+Herb_37,Botanical_37,Common_37,Part,Powder,Herb,0
+Herb_38,Botanical_38,Common_38,Part,Powder,Herb,0
+Herb_39,Botanical_39,Common_39,Part,Powder,Herb,0
+Herb_40,Botanical_40,Common_40,Part,Powder,Herb,0
+Herb_41,Botanical_41,Common_41,Part,Powder,Herb,0
+Herb_42,Botanical_42,Common_42,Part,Powder,Herb,0
+Herb_43,Botanical_43,Common_43,Part,Powder,Herb,0
+Herb_44,Botanical_44,Common_44,Part,Powder,Herb,0
+Herb_45,Botanical_45,Common_45,Part,Powder,Herb,0
+Herb_46,Botanical_46,Common_46,Part,Powder,Herb,0
+Herb_47,Botanical_47,Common_47,Part,Powder,Herb,0
+Herb_48,Botanical_48,Common_48,Part,Powder,Herb,0
+Herb_49,Botanical_49,Common_49,Part,Powder,Herb,0
+Herb_50,Botanical_50,Common_50,Part,Powder,Herb,0
+Herb_51,Botanical_51,Common_51,Part,Powder,Herb,0
+Herb_52,Botanical_52,Common_52,Part,Powder,Herb,0
+Herb_53,Botanical_53,Common_53,Part,Powder,Herb,0
+Herb_54,Botanical_54,Common_54,Part,Powder,Herb,0
+Herb_55,Botanical_55,Common_55,Part,Powder,Herb,0
+Herb_56,Botanical_56,Common_56,Part,Powder,Herb,0
+Herb_57,Botanical_57,Common_57,Part,Powder,Herb,0
+Herb_58,Botanical_58,Common_58,Part,Powder,Herb,0
+Herb_59,Botanical_59,Common_59,Part,Powder,Herb,0
+Herb_60,Botanical_60,Common_60,Part,Powder,Herb,0
+Herb_61,Botanical_61,Common_61,Part,Powder,Herb,0
+Herb_62,Botanical_62,Common_62,Part,Powder,Herb,0
+Herb_63,Botanical_63,Common_63,Part,Powder,Herb,0
+Herb_64,Botanical_64,Common_64,Part,Powder,Herb,0
+Herb_65,Botanical_65,Common_65,Part,Powder,Herb,0
+Herb_66,Botanical_66,Common_66,Part,Powder,Herb,0
+Herb_67,Botanical_67,Common_67,Part,Powder,Herb,0
+Herb_68,Botanical_68,Common_68,Part,Powder,Herb,0
+Herb_69,Botanical_69,Common_69,Part,Powder,Herb,0
+Herb_70,Botanical_70,Common_70,Part,Powder,Herb,0
+Herb_71,Botanical_71,Common_71,Part,Powder,Herb,0
+Herb_72,Botanical_72,Common_72,Part,Powder,Herb,0
+Herb_73,Botanical_73,Common_73,Part,Powder,Herb,0
+Herb_74,Botanical_74,Common_74,Part,Powder,Herb,0
+Herb_75,Botanical_75,Common_75,Part,Powder,Herb,0
+Herb_76,Botanical_76,Common_76,Part,Powder,Herb,0
+Herb_77,Botanical_77,Common_77,Part,Powder,Herb,0
+Herb_78,Botanical_78,Common_78,Part,Powder,Herb,0
+Herb_79,Botanical_79,Common_79,Part,Powder,Herb,0
+Herb_80,Botanical_80,Common_80,Part,Powder,Herb,0
+Herb_81,Botanical_81,Common_81,Part,Powder,Herb,0
+Herb_82,Botanical_82,Common_82,Part,Powder,Herb,0
+Herb_83,Botanical_83,Common_83,Part,Powder,Herb,0
+Herb_84,Botanical_84,Common_84,Part,Powder,Herb,0
+Herb_85,Botanical_85,Common_85,Part,Powder,Herb,0
+Herb_86,Botanical_86,Common_86,Part,Powder,Herb,0
+Herb_87,Botanical_87,Common_87,Part,Powder,Herb,0
+Herb_88,Botanical_88,Common_88,Part,Powder,Herb,0
+Herb_89,Botanical_89,Common_89,Part,Powder,Herb,0
+Herb_90,Botanical_90,Common_90,Part,Powder,Herb,0
+Herb_91,Botanical_91,Common_91,Part,Powder,Herb,0
+Herb_92,Botanical_92,Common_92,Part,Powder,Herb,0
+Herb_93,Botanical_93,Common_93,Part,Powder,Herb,0
+Herb_94,Botanical_94,Common_94,Part,Powder,Herb,0
+Herb_95,Botanical_95,Common_95,Part,Powder,Herb,0
+Herb_96,Botanical_96,Common_96,Part,Powder,Herb,0
+Herb_97,Botanical_97,Common_97,Part,Powder,Herb,0
+Herb_98,Botanical_98,Common_98,Part,Powder,Herb,0
+Herb_99,Botanical_99,Common_99,Part,Powder,Herb,0
+Herb_100,Botanical_100,Common_100,Part,Powder,Herb,0
+Herb_101,Botanical_101,Common_101,Part,Powder,Herb,0
+Herb_102,Botanical_102,Common_102,Part,Powder,Herb,0
+Herb_103,Botanical_103,Common_103,Part,Powder,Herb,0
+Herb_104,Botanical_104,Common_104,Part,Powder,Herb,0
+Herb_105,Botanical_105,Common_105,Part,Powder,Herb,0
+Herb_106,Botanical_106,Common_106,Part,Powder,Herb,0
+Herb_107,Botanical_107,Common_107,Part,Powder,Herb,0
+Herb_108,Botanical_108,Common_108,Part,Powder,Herb,0
+Herb_109,Botanical_109,Common_109,Part,Powder,Herb,0
+Herb_110,Botanical_110,Common_110,Part,Powder,Herb,0
+Herb_111,Botanical_111,Common_111,Part,Powder,Herb,0
+Herb_112,Botanical_112,Common_112,Part,Powder,Herb,0
+Herb_113,Botanical_113,Common_113,Part,Powder,Herb,0
+Herb_114,Botanical_114,Common_114,Part,Powder,Herb,0
+Herb_115,Botanical_115,Common_115,Part,Powder,Herb,0
+Herb_116,Botanical_116,Common_116,Part,Powder,Herb,0
+Herb_117,Botanical_117,Common_117,Part,Powder,Herb,0
+Herb_118,Botanical_118,Common_118,Part,Powder,Herb,0
+Herb_119,Botanical_119,Common_119,Part,Powder,Herb,0
+Herb_120,Botanical_120,Common_120,Part,Powder,Herb,0
+Herb_121,Botanical_121,Common_121,Part,Powder,Herb,0
+Herb_122,Botanical_122,Common_122,Part,Powder,Herb,0
+Herb_123,Botanical_123,Common_123,Part,Powder,Herb,0
+Herb_124,Botanical_124,Common_124,Part,Powder,Herb,0
+Herb_125,Botanical_125,Common_125,Part,Powder,Herb,0
+Herb_126,Botanical_126,Common_126,Part,Powder,Herb,0
+Herb_127,Botanical_127,Common_127,Part,Powder,Herb,0
+Herb_128,Botanical_128,Common_128,Part,Powder,Herb,0
+Herb_129,Botanical_129,Common_129,Part,Powder,Herb,0
+Herb_130,Botanical_130,Common_130,Part,Powder,Herb,0
+Herb_131,Botanical_131,Common_131,Part,Powder,Herb,0
+Herb_132,Botanical_132,Common_132,Part,Powder,Herb,0
+Herb_133,Botanical_133,Common_133,Part,Powder,Herb,0
+Herb_134,Botanical_134,Common_134,Part,Powder,Herb,0
+Herb_135,Botanical_135,Common_135,Part,Powder,Herb,0
+Herb_136,Botanical_136,Common_136,Part,Powder,Herb,0
+Herb_137,Botanical_137,Common_137,Part,Powder,Herb,0
+Herb_138,Botanical_138,Common_138,Part,Powder,Herb,0
+Herb_139,Botanical_139,Common_139,Part,Powder,Herb,0
+Herb_140,Botanical_140,Common_140,Part,Powder,Herb,0
+Herb_141,Botanical_141,Common_141,Part,Powder,Herb,0
+Herb_142,Botanical_142,Common_142,Part,Powder,Herb,0
+Herb_143,Botanical_143,Common_143,Part,Powder,Herb,0
+Herb_144,Botanical_144,Common_144,Part,Powder,Herb,0
+Herb_145,Botanical_145,Common_145,Part,Powder,Herb,0
+Herb_146,Botanical_146,Common_146,Part,Powder,Herb,0
+Herb_147,Botanical_147,Common_147,Part,Powder,Herb,0
+Herb_148,Botanical_148,Common_148,Part,Powder,Herb,0
+Herb_149,Botanical_149,Common_149,Part,Powder,Herb,0
+Herb_150,Botanical_150,Common_150,Part,Powder,Herb,0
+Herb_151,Botanical_151,Common_151,Part,Powder,Herb,0
+Herb_152,Botanical_152,Common_152,Part,Powder,Herb,0
+Herb_153,Botanical_153,Common_153,Part,Powder,Herb,0
+Herb_154,Botanical_154,Common_154,Part,Powder,Herb,0
+Herb_155,Botanical_155,Common_155,Part,Powder,Herb,0
+Herb_156,Botanical_156,Common_156,Part,Powder,Herb,0
+Herb_157,Botanical_157,Common_157,Part,Powder,Herb,0
+Herb_158,Botanical_158,Common_158,Part,Powder,Herb,0
+Herb_159,Botanical_159,Common_159,Part,Powder,Herb,0
+Herb_160,Botanical_160,Common_160,Part,Powder,Herb,0
+Herb_161,Botanical_161,Common_161,Part,Powder,Herb,0
+Herb_162,Botanical_162,Common_162,Part,Powder,Herb,0
+Herb_163,Botanical_163,Common_163,Part,Powder,Herb,0
+Herb_164,Botanical_164,Common_164,Part,Powder,Herb,0
+Herb_165,Botanical_165,Common_165,Part,Powder,Herb,0
+Herb_166,Botanical_166,Common_166,Part,Powder,Herb,0
+Herb_167,Botanical_167,Common_167,Part,Powder,Herb,0
+Herb_168,Botanical_168,Common_168,Part,Powder,Herb,0
+Herb_169,Botanical_169,Common_169,Part,Powder,Herb,0
+Herb_170,Botanical_170,Common_170,Part,Powder,Herb,0
+Herb_171,Botanical_171,Common_171,Part,Powder,Herb,0
+Herb_172,Botanical_172,Common_172,Part,Powder,Herb,0
+Herb_173,Botanical_173,Common_173,Part,Powder,Herb,0
+Herb_174,Botanical_174,Common_174,Part,Powder,Herb,0
+Herb_175,Botanical_175,Common_175,Part,Powder,Herb,0
+Herb_176,Botanical_176,Common_176,Part,Powder,Herb,0
+Herb_177,Botanical_177,Common_177,Part,Powder,Herb,0
+Herb_178,Botanical_178,Common_178,Part,Powder,Herb,0
+Herb_179,Botanical_179,Common_179,Part,Powder,Herb,0
+Herb_180,Botanical_180,Common_180,Part,Powder,Herb,0
+Herb_181,Botanical_181,Common_181,Part,Powder,Herb,0
+Herb_182,Botanical_182,Common_182,Part,Powder,Herb,0
+Herb_183,Botanical_183,Common_183,Part,Powder,Herb,0
+Herb_184,Botanical_184,Common_184,Part,Powder,Herb,0
+Herb_185,Botanical_185,Common_185,Part,Powder,Herb,0
+Herb_186,Botanical_186,Common_186,Part,Powder,Herb,0
+Herb_187,Botanical_187,Common_187,Part,Powder,Herb,0
+Herb_188,Botanical_188,Common_188,Part,Powder,Herb,0
+Herb_189,Botanical_189,Common_189,Part,Powder,Herb,0
+Herb_190,Botanical_190,Common_190,Part,Powder,Herb,0
+Herb_191,Botanical_191,Common_191,Part,Powder,Herb,0
+Herb_192,Botanical_192,Common_192,Part,Powder,Herb,0
+Herb_193,Botanical_193,Common_193,Part,Powder,Herb,0
+Herb_194,Botanical_194,Common_194,Part,Powder,Herb,0
+Herb_195,Botanical_195,Common_195,Part,Powder,Herb,0
+Herb_196,Botanical_196,Common_196,Part,Powder,Herb,0
+Herb_197,Botanical_197,Common_197,Part,Powder,Herb,0
+Herb_198,Botanical_198,Common_198,Part,Powder,Herb,0
+Herb_199,Botanical_199,Common_199,Part,Powder,Herb,0
+Herb_200,Botanical_200,Common_200,Part,Powder,Herb,0
+Herb_201,Botanical_201,Common_201,Part,Powder,Herb,0
+Herb_202,Botanical_202,Common_202,Part,Powder,Herb,0
+Herb_203,Botanical_203,Common_203,Part,Powder,Herb,0
+Herb_204,Botanical_204,Common_204,Part,Powder,Herb,0
+Herb_205,Botanical_205,Common_205,Part,Powder,Herb,0
+Herb_206,Botanical_206,Common_206,Part,Powder,Herb,0
+Herb_207,Botanical_207,Common_207,Part,Powder,Herb,0
+Herb_208,Botanical_208,Common_208,Part,Powder,Herb,0
+Herb_209,Botanical_209,Common_209,Part,Powder,Herb,0
+Herb_210,Botanical_210,Common_210,Part,Powder,Herb,0
+Herb_211,Botanical_211,Common_211,Part,Powder,Herb,0
+Herb_212,Botanical_212,Common_212,Part,Powder,Herb,0
+Herb_213,Botanical_213,Common_213,Part,Powder,Herb,0
+Herb_214,Botanical_214,Common_214,Part,Powder,Herb,0
+Herb_215,Botanical_215,Common_215,Part,Powder,Herb,0
+Herb_216,Botanical_216,Common_216,Part,Powder,Herb,0
+Herb_217,Botanical_217,Common_217,Part,Powder,Herb,0
+Herb_218,Botanical_218,Common_218,Part,Powder,Herb,0
+Herb_219,Botanical_219,Common_219,Part,Powder,Herb,0
+Herb_220,Botanical_220,Common_220,Part,Powder,Herb,0
+Herb_221,Botanical_221,Common_221,Part,Powder,Herb,0
+Herb_222,Botanical_222,Common_222,Part,Powder,Herb,0
+Herb_223,Botanical_223,Common_223,Part,Powder,Herb,0
+Herb_224,Botanical_224,Common_224,Part,Powder,Herb,0
+Herb_225,Botanical_225,Common_225,Part,Powder,Herb,0
+Herb_226,Botanical_226,Common_226,Part,Powder,Herb,0
+Herb_227,Botanical_227,Common_227,Part,Powder,Herb,0
+Herb_228,Botanical_228,Common_228,Part,Powder,Herb,0
+Herb_229,Botanical_229,Common_229,Part,Powder,Herb,0
+Herb_230,Botanical_230,Common_230,Part,Powder,Herb,0
+Herb_231,Botanical_231,Common_231,Part,Powder,Herb,0
+Herb_232,Botanical_232,Common_232,Part,Powder,Herb,0
+Herb_233,Botanical_233,Common_233,Part,Powder,Herb,0
+Herb_234,Botanical_234,Common_234,Part,Powder,Herb,0
+Herb_235,Botanical_235,Common_235,Part,Powder,Herb,0
+Herb_236,Botanical_236,Common_236,Part,Powder,Herb,0
+Herb_237,Botanical_237,Common_237,Part,Powder,Herb,0
+Herb_238,Botanical_238,Common_238,Part,Powder,Herb,0
+Herb_239,Botanical_239,Common_239,Part,Powder,Herb,0
+Herb_240,Botanical_240,Common_240,Part,Powder,Herb,0
+Herb_241,Botanical_241,Common_241,Part,Powder,Herb,0
+Herb_242,Botanical_242,Common_242,Part,Powder,Herb,0
+Herb_243,Botanical_243,Common_243,Part,Powder,Herb,0
+Herb_244,Botanical_244,Common_244,Part,Powder,Herb,0
+Herb_245,Botanical_245,Common_245,Part,Powder,Herb,0
+Herb_246,Botanical_246,Common_246,Part,Powder,Herb,0
+Herb_247,Botanical_247,Common_247,Part,Powder,Herb,0
+Herb_248,Botanical_248,Common_248,Part,Powder,Herb,0
+Herb_249,Botanical_249,Common_249,Part,Powder,Herb,0
+Herb_250,Botanical_250,Common_250,Part,Powder,Herb,0
+Herb_251,Botanical_251,Common_251,Part,Powder,Herb,0
+Herb_252,Botanical_252,Common_252,Part,Powder,Herb,0
+Herb_253,Botanical_253,Common_253,Part,Powder,Herb,0
+Herb_254,Botanical_254,Common_254,Part,Powder,Herb,0
+Herb_255,Botanical_255,Common_255,Part,Powder,Herb,0
+Herb_256,Botanical_256,Common_256,Part,Powder,Herb,0
+Herb_257,Botanical_257,Common_257,Part,Powder,Herb,0
+Herb_258,Botanical_258,Common_258,Part,Powder,Herb,0
+Herb_259,Botanical_259,Common_259,Part,Powder,Herb,0
+Herb_260,Botanical_260,Common_260,Part,Powder,Herb,0
+Herb_261,Botanical_261,Common_261,Part,Powder,Herb,0
+Herb_262,Botanical_262,Common_262,Part,Powder,Herb,0
+Herb_263,Botanical_263,Common_263,Part,Powder,Herb,0
+Herb_264,Botanical_264,Common_264,Part,Powder,Herb,0
+Herb_265,Botanical_265,Common_265,Part,Powder,Herb,0
+Herb_266,Botanical_266,Common_266,Part,Powder,Herb,0
+Herb_267,Botanical_267,Common_267,Part,Powder,Herb,0
+Herb_268,Botanical_268,Common_268,Part,Powder,Herb,0
+Herb_269,Botanical_269,Common_269,Part,Powder,Herb,0
+Herb_270,Botanical_270,Common_270,Part,Powder,Herb,0
+Herb_271,Botanical_271,Common_271,Part,Powder,Herb,0
+Herb_272,Botanical_272,Common_272,Part,Powder,Herb,0
+Herb_273,Botanical_273,Common_273,Part,Powder,Herb,0
+Herb_274,Botanical_274,Common_274,Part,Powder,Herb,0
+Herb_275,Botanical_275,Common_275,Part,Powder,Herb,0
+Herb_276,Botanical_276,Common_276,Part,Powder,Herb,0
+Herb_277,Botanical_277,Common_277,Part,Powder,Herb,0
+Herb_278,Botanical_278,Common_278,Part,Powder,Herb,0
+Herb_279,Botanical_279,Common_279,Part,Powder,Herb,0
+Herb_280,Botanical_280,Common_280,Part,Powder,Herb,0
+Herb_281,Botanical_281,Common_281,Part,Powder,Herb,0
+Herb_282,Botanical_282,Common_282,Part,Powder,Herb,0
+Herb_283,Botanical_283,Common_283,Part,Powder,Herb,0
+Herb_284,Botanical_284,Common_284,Part,Powder,Herb,0
+Herb_285,Botanical_285,Common_285,Part,Powder,Herb,0
+Herb_286,Botanical_286,Common_286,Part,Powder,Herb,0
+Herb_287,Botanical_287,Common_287,Part,Powder,Herb,0
+Herb_288,Botanical_288,Common_288,Part,Powder,Herb,0
+Herb_289,Botanical_289,Common_289,Part,Powder,Herb,0
+Herb_290,Botanical_290,Common_290,Part,Powder,Herb,0
+Herb_291,Botanical_291,Common_291,Part,Powder,Herb,0
+Herb_292,Botanical_292,Common_292,Part,Powder,Herb,0
+Herb_293,Botanical_293,Common_293,Part,Powder,Herb,0
+Herb_294,Botanical_294,Common_294,Part,Powder,Herb,0
+Herb_295,Botanical_295,Common_295,Part,Powder,Herb,0
+Herb_296,Botanical_296,Common_296,Part,Powder,Herb,0
+Herb_297,Botanical_297,Common_297,Part,Powder,Herb,0
+Herb_298,Botanical_298,Common_298,Part,Powder,Herb,0
+Herb_299,Botanical_299,Common_299,Part,Powder,Herb,0
+Herb_300,Botanical_300,Common_300,Part,Powder,Herb,0
