@@ -2,96 +2,89 @@ import streamlit as st
 import pandas as pd
 import sqlite3
 import csv
-
-from modules.database import (
-    create_ingredient_table,
-    create_formulation_table
-)
+import os
 
 st.title("Herbal Formulation System")
 
-create_ingredient_table()
-create_formulation_table()
+# database file
+DB_PATH = os.path.join(os.getcwd(), "ingredients.db")
+
+def get_connection():
+    return sqlite3.connect(DB_PATH)
+
+
+def create_tables():
+
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS ingredients (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            sanskrit_name TEXT,
+            botanical_name TEXT,
+            common_name TEXT,
+            plant_part TEXT,
+            form TEXT,
+            category TEXT,
+            price_per_kg REAL
+        )
+    """)
+
+    conn.commit()
+    conn.close()
+
+
+create_tables()
 
 # -----------------------------
-# LOAD MASTER INGREDIENT FILE
+# LOAD INGREDIENT MASTER FILE
 # -----------------------------
 
 st.header("Load Ingredient Master Database")
 
 if st.button("Load Ingredients from CSV"):
 
-    conn = sqlite3.connect("ingredients.db")
+    conn = get_connection()
     cursor = conn.cursor()
 
-    with open("ingredients_master.csv", newline='', encoding='utf-8') as csvfile:
+    file_path = os.path.join(os.getcwd(), "ingredients_master.csv")
 
-        reader = csv.DictReader(csvfile)
+    if not os.path.exists(file_path):
 
-        for row in reader:
+        st.error("ingredients_master.csv file not found in project folder")
 
-            try:
+    else:
 
-                cursor.execute("""
-                    INSERT INTO ingredients
-                    (sanskrit_name, botanical_name, common_name, plant_part, form, category, price_per_kg)
-                    VALUES (?, ?, ?, ?, ?, ?, ?)
-                """, (
-                    row["sanskrit_name"],
-                    row["botanical_name"],
-                    row["common_name"],
-                    row["plant_part"],
-                    row["form"],
-                    row["category"],
-                    float(row["price_per_kg"])
-                ))
+        with open(file_path, newline='', encoding='utf-8') as csvfile:
 
-            except:
-                pass
+            reader = csv.DictReader(csvfile)
 
-    conn.commit()
-    conn.close()
+            for row in reader:
 
-    st.success("Ingredients imported successfully")
+                try:
 
+                    cursor.execute("""
+                        INSERT INTO ingredients
+                        (sanskrit_name, botanical_name, common_name, plant_part, form, category, price_per_kg)
+                        VALUES (?, ?, ?, ?, ?, ?, ?)
+                    """, (
+                        row["sanskrit_name"],
+                        row["botanical_name"],
+                        row["common_name"],
+                        row["plant_part"],
+                        row["form"],
+                        row["category"],
+                        float(row["price_per_kg"])
+                    ))
 
-# -----------------------------
-# ADD INGREDIENT
-# -----------------------------
+                except:
+                    pass
 
-st.header("Add New Ingredient")
+        conn.commit()
+        conn.close()
 
-sanskrit_name = st.text_input("Sanskrit Name")
-botanical_name = st.text_input("Botanical Name")
-common_name = st.text_input("Common Name")
-plant_part = st.text_input("Plant Part")
-form = st.text_input("Form (Powder / Extract / Oil etc)")
-category = st.text_input("Category")
-price = st.number_input("Price per kg")
-
-if st.button("Add Ingredient"):
-
-    conn = sqlite3.connect("ingredients.db")
-    cursor = conn.cursor()
-
-    cursor.execute("""
-        INSERT INTO ingredients
-        (sanskrit_name, botanical_name, common_name, plant_part, form, category, price_per_kg)
-        VALUES (?, ?, ?, ?, ?, ?, ?)
-    """, (
-        sanskrit_name,
-        botanical_name,
-        common_name,
-        plant_part,
-        form,
-        category,
-        price
-    ))
-
-    conn.commit()
-    conn.close()
-
-    st.success("Ingredient added successfully")
+        st.success("Ingredient database imported successfully")
 
 
 # -----------------------------
@@ -102,7 +95,7 @@ st.header("Search Ingredients")
 
 keyword = st.text_input("Type Sanskrit or Botanical name")
 
-conn = sqlite3.connect("ingredients.db")
+conn = get_connection()
 
 if keyword:
 
