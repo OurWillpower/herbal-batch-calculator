@@ -1,5 +1,6 @@
 import sqlite3
 import csv
+import os
 
 
 def create_ingredient_table():
@@ -47,17 +48,21 @@ def load_ingredients_from_csv():
     conn = sqlite3.connect("ingredients.db")
     cursor = conn.cursor()
 
-    # check if ingredients already exist
     cursor.execute("SELECT COUNT(*) FROM ingredients")
     count = cursor.fetchone()[0]
 
     if count == 0:
 
-        with open("ingredients_master.csv", newline='', encoding='utf-8') as csvfile:
+        file_path = os.path.join(os.getcwd(), "ingredients_master.csv")
+
+        if not os.path.exists(file_path):
+            print("CSV file not found:", file_path)
+            return
+
+        with open(file_path, newline='', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
 
             for row in reader:
-
                 cursor.execute("""
                     INSERT INTO ingredients
                     (sanskrit_name, botanical_name, common_name, plant_part, form, category, price_per_kg)
