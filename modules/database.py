@@ -12,7 +12,7 @@ def create_ingredient_table():
         CREATE TABLE IF NOT EXISTS ingredients (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             sanskrit_name TEXT,
-            botanical_name TEXT,
+            botanical_name TEXT UNIQUE,
             common_name TEXT,
             plant_part TEXT,
             form TEXT,
@@ -63,19 +63,23 @@ def load_ingredients_from_csv():
             reader = csv.DictReader(csvfile)
 
             for row in reader:
-                cursor.execute("""
-                    INSERT INTO ingredients
-                    (sanskrit_name, botanical_name, common_name, plant_part, form, category, price_per_kg)
-                    VALUES (?, ?, ?, ?, ?, ?, ?)
-                """, (
-                    row["sanskrit_name"],
-                    row["botanical_name"],
-                    row["common_name"],
-                    row["plant_part"],
-                    row["form"],
-                    row["category"],
-                    float(row["price_per_kg"])
-                ))
+                try:
+                    cursor.execute("""
+                        INSERT INTO ingredients
+                        (sanskrit_name, botanical_name, common_name, plant_part, form, category, price_per_kg)
+                        VALUES (?, ?, ?, ?, ?, ?, ?)
+                    """, (
+                        row["sanskrit_name"],
+                        row["botanical_name"],
+                        row["common_name"],
+                        row["plant_part"],
+                        row["form"],
+                        row["category"],
+                        float(row["price_per_kg"])
+                    ))
+                except sqlite3.IntegrityError:
+                    # Skip duplicates
+                    pass
 
         conn.commit()
 
