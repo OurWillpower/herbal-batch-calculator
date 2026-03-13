@@ -48,7 +48,7 @@ if st.button("Load Ingredients from CSV"):
     conn = get_connection()
     cursor = conn.cursor()
 
-    file_path = os.path.join(os.getcwd(), "ingredients_master.csv")
+   file_path = "ingredients_master.csv"
 
     if not os.path.exists(file_path):
 
